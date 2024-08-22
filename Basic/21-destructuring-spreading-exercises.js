@@ -5,13 +5,13 @@ https://www.twitch.tv/videos/2218300512?t=00h17m10s
 */
 
 // 1. Usa desestructuración para extraer los dos primeros elementos de un array
-let colors = ["red", "blue", "pink", "green"];
-let [color1, color2] = colors;
+const colors = ["red", "blue", "pink", "green"];
+const [color1, color2] = colors;
 
 console.log(color1, color2);
 
 // 2. Usa desestructuración en un array y asigna un valor predeterminado a una variable
-let [, , , , color5 = "purple"] = colors;
+const [, , , , color5 = "purple"] = colors;
 console.log(color1, color2, color5);
 
 // 3. Usa desestructuración para extraer dos propiedades de un objeto
@@ -26,18 +26,18 @@ const enemy = {
 	},
 };
 
-let { hp, power } = enemy;
+const { hp, power } = enemy;
 console.table(enemy);
 console.log(hp, power);
 
 // 4. Usa desestructuración para extraer dos propiedades de un objeto y asígnalas
 //    a nuevas variables con nombres diferentes
 
-let { hp: health, power: damage } = enemy;
+const { hp: health, power: damage } = enemy;
 console.log(health, damage);
 
 // 5. Usa desestructuración para extraer dos propiedades de un objeto anidado
-let {
+const {
 	loot: { normal: common },
 	loot: { better: rare },
 } = enemy;

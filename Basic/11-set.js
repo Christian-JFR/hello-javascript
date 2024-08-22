@@ -52,7 +52,7 @@ console.log(mySet.has("Brais"));
 console.log(mySet.size);
 
 // Convertir un set a array
-let myArray = Array.from(mySet);
+const myArray = Array.from(mySet);
 console.log(myArray);
 
 // Convertir un array a set

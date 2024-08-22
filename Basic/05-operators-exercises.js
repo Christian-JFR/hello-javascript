@@ -16,7 +16,7 @@ let myPower = 5 ** 2;
 // 2. Crea una variable para cada tipo de operación de asignación,
 //    que haga uso de las variables utilizadas para las operaciones aritméticas
 
-let anAssignment = myAdd;
+const anAssignment = myAdd;
 myAdd += myAdd;
 mySubtraction -= mySubtraction;
 myMultiply -= myMultiply;

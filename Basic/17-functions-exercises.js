@@ -8,11 +8,11 @@ https://www.twitch.tv/videos/2212289583?t=00h17m45s
 
 // 1. Crea una función que reciba dos números y devuelva su suma
 
-let a = 1;
+const a = 1;
 console.log(typeof a);
 function suma(num1, num2) {
 	if (typeof num1 === "number" && typeof num2 === "number") {
-		let result = num1 + num2;
+		const result = num1 + num2;
 		console.log(result);
 	} else {
 		console.log("Introduzca 2 numeros");
@@ -30,7 +30,7 @@ const numeros = [7, 5, 8, 9, 4, 0, -7, 80];
 function greaterNumber(arr) {
 	let aux = -Infinity;
 	for (let i = 0; i < arr.length; i++) {
-		let greater = arr[i] > aux ? (aux = arr[i]) : (aux = aux);
+		const greater = arr[i] > aux ? (aux = arr[i]) : (aux = aux);
 	}
 	console.log(aux);
 }
@@ -40,10 +40,10 @@ greaterNumber(numeros);
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
 function howManyVocals(str) {
-	let message = str.toLowerCase();
+	const message = str.toLowerCase();
 	let totalVocals = 0;
 
-	for (let letter of message) {
+	for (const letter of message) {
 		if (
 			letter === "a" ||
 			letter === "e" ||
@@ -66,7 +66,7 @@ howManyVocals("SOLODOLO");
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
-let lowercaseStrings = [
+const lowercaseStrings = [
 	"variables",
 	"function",
 	"datatypes",
@@ -80,9 +80,9 @@ let lowercaseStrings = [
 ];
 
 function capitalizeALl(arr) {
-	let uppercaseStrings = [];
-	for (let word of arr) {
-		let wordUppercase = word.toUpperCase();
+	const uppercaseStrings = [];
+	for (const word of arr) {
+		const wordUppercase = word.toUpperCase();
 		uppercaseStrings.push(wordUppercase);
 	}
 	return uppercaseStrings;
@@ -111,8 +111,8 @@ console.log(isPrime(19));
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
-let numbers1 = [1, 2, 3, 4, 5, 6, 7];
-let numbers2 = [2, 3, 5, 7, 11, 13];
+const numbers1 = [1, 2, 3, 4, 5, 6, 7];
+const numbers2 = [2, 3, 5, 7, 11, 13];
 
 function commonElements(arr1, arr2) {
 	const finalArray = [];
@@ -132,13 +132,13 @@ console.log(commonElements(numbers1, numbers2));
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
-let numbers3 = [2, 4, 6, 8, 10];
+const numbers3 = [2, 4, 6, 8, 10];
 
 function addEvens(arr) {
 	let result = 0;
-	for (let num of arr) {
+	for (const num of arr) {
 		if (num % 2 === 0) {
-			let add = num;
+			const add = num;
 			result += add;
 		}
 	}

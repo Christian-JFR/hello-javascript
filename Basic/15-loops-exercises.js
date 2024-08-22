@@ -60,17 +60,17 @@ const names = [
 	"Ana",
 ];
 
-for (let name of names) {
+for (const name of names) {
 	console.log(name);
 }
 
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
 
-let mensaje =
+const mensaje =
 	"El trabajo en equipo en el ámbito de la programación permite abordar problemas complejos de manera más eficiente y efectiva.".toLowerCase();
 let totalVocales = 0;
 
-for (let letra of mensaje) {
+for (const letra of mensaje) {
 	if (
 		letra === "a" ||
 		letra === "e" ||

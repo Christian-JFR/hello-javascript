@@ -8,7 +8,7 @@ https://www.twitch.tv/videos/2206228701?t=00h16m02s
 
 // 1. Imprime por consola tu nombre si una variable toma su valor
 
-let myName = "Christian";
+const myName = "Christian";
 
 if (myName === "Christian") {
 	console.log(`The name is ${myName}`);
@@ -16,8 +16,8 @@ if (myName === "Christian") {
 
 // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
 
-let user = "admin";
-let password = "1234567890";
+const user = "admin";
+const password = "1234567890";
 
 if (user === "admin" && password === "1234567890") {
 	console.log("successful login");
@@ -27,7 +27,7 @@ if (user === "admin" && password === "1234567890") {
 
 // con op. ternario
 
-let message =
+const message =
 	user !== "admin" || password !== "1234567890"
 		? "Incorrect user or password"
 		: "Successful Login";
@@ -35,7 +35,7 @@ console.log(message);
 
 // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
 
-let myNumber = -4;
+const myNumber = -4;
 
 if (myNumber > 0) {
 	console.log(`${myNumber} is Positive.`);
@@ -48,7 +48,7 @@ if (myNumber > 0) {
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
 
 const ofLegalAge = 18;
-let userAge = 15;
+const userAge = 15;
 let yearsAway;
 
 if (userAge >= ofLegalAge) {
@@ -61,12 +61,12 @@ if (userAge >= ofLegalAge) {
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad
 
-let category = userAge >= ofLegalAge ? "adulto" : "menor";
+const category = userAge >= ofLegalAge ? "adulto" : "menor";
 console.log(category);
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
 
-let month = "February";
+const month = "February";
 
 if (month === "March" || month === "April" || month === "May") {
 	console.log("we are in Spring season");
@@ -89,7 +89,7 @@ if (month === "March" || month === "April" || month === "May") {
 }
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
-let year = 2024;
+const year = 2024;
 
 if (month === "February") {
 	if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
@@ -122,7 +122,7 @@ if (month === "February") {
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 
-let language = "es";
+const language = "es";
 
 switch (language) {
 	case "es":
@@ -179,7 +179,7 @@ switch (month) {
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
 
-let leapYear = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+const leapYear = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
 
 switch (month) {
 	case "January":

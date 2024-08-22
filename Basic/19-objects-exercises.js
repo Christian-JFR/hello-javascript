@@ -5,7 +5,7 @@ https://www.twitch.tv/videos/2218300512?t=00h17m10s
 */
 
 // 1. Crea un objeto con 3 propiedades
-let theBatman = {
+const theBatman = {
 	name: "Bruce Wayne",
 	"alter ego": "Batman",
 	hero: true,
@@ -35,13 +35,13 @@ console.table(theBatman);
 theBatman.callBatmobile();
 
 // 6. Itera las propiedades del objeto
-for (let key in theBatman) {
+for (const key in theBatman) {
 	console.log(`${key} => ${theBatman[key]}`);
 }
 
 // 7. Crea un objeto anidado
 
-let characters = {
+const characters = {
 	theBatman: {
 		name: "Bruce Wayne",
 		"alter ego": "Batman",
